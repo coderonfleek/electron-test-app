@@ -25,5 +25,8 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Run tests
+          name: Generate Builds
           command: npm run make
+
+      - store_artifacts:
+          path: /repo/out
